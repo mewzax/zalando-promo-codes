@@ -1,6 +1,13 @@
 # zalando-promo-codes
 get promo codes for zalando by subscribing to newsletter
 
+# why
+```
+i did this for some1 on a code server
+i dont even understand why making this cuz u must buy products then to use the codes
+but bruh enjoy
+```
+
 # usage
 * run `main.py`
 * input threads (i really did shit)
