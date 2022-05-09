@@ -33,7 +33,7 @@ def getCode(message):
 	return message
 
 def saveCode(code):
-	with open("code.txt", "a") as f:
+	with open("codes.txt", "a") as f:
 		f.write(code + "\n")
 
 def main():
