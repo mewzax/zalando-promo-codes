@@ -1,4 +1,4 @@
-import requests, threading
+import requests, threading, time
 
 def getEmail():
 	url = "https://api.internal.temp-mail.io/api/v3/email/new"
@@ -40,20 +40,23 @@ def main():
 	email = getEmail()
 	print(email)
 	status = zalandoNewsLetterSignup(email)
-	print(status)
 	if status == 200:
 		while True:
 			message = getMessage(email)
 			if message != "Wait":
 				code = getCode(message)
 				saveCode(code)
-				main()
 				break
 			else:
-				continue
+				time.sleep(3)
+
+
+def run():
+   while True:
+	   main()
 
 if __name__ == "__main__":
 	threads = input("How many threads do you want to run? ")
 	for i in range(int(threads)):
-		t = threading.Thread(target=main)
+		t = threading.Thread(target=run)
 		t.start()
