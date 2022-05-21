@@ -1,6 +1,8 @@
 # zalando-promo-codes
 get promo codes for zalando by subscribing to newsletter
 
+# my ad
+for everyone who want a version where u can choose ur country dm me: Mewzax#0001 it's $3 btc
 # why
 ```
 i did this for some1 on a code server
